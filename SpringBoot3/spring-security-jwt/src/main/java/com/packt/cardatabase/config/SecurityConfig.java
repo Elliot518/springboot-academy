@@ -1,6 +1,9 @@
-package com.packt.cardatabase;
+package com.packt.cardatabase.config;
 
 import java.util.Arrays;
+
+import com.packt.cardatabase.AuthEntryPoint;
+import com.packt.cardatabase.AuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

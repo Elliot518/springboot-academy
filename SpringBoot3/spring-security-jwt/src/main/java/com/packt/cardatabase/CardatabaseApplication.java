@@ -16,24 +16,24 @@ import com.packt.cardatabase.domain.Owner;
 import com.packt.cardatabase.domain.OwnerRepository;
 
 @SpringBootApplication
-public class CardatabaseApplication implements CommandLineRunner {
-	private static final Logger logger = LoggerFactory.getLogger(CardatabaseApplication.class);
-	private final CarRepository repository;
-	private final OwnerRepository orepository;
-	private final AppUserRepository urepository;
+public class CardatabaseApplication {
+//	private static final Logger logger = LoggerFactory.getLogger(CardatabaseApplication.class);
+//	private final CarRepository repository;
+//	private final OwnerRepository orepository;
+//	private final AppUserRepository urepository;
 
-	public CardatabaseApplication(CarRepository repository, OwnerRepository orepository,
-			AppUserRepository urepository) {
-		this.repository = repository;
-		this.orepository = orepository;
-		this.urepository = urepository;
-	}
+//	public CardatabaseApplication(CarRepository repository, OwnerRepository orepository,
+//			AppUserRepository urepository) {
+//		this.repository = repository;
+//		this.orepository = orepository;
+//		this.urepository = urepository;
+//	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(CardatabaseApplication.class, args);
 	}
 
-	@Override
+	/*@Override
 	public void run(String... args) throws Exception {
 		// Add owner objects and save these to db
 		Owner owner1 = new Owner("John", "Johnson");
@@ -53,5 +53,5 @@ public class CardatabaseApplication implements CommandLineRunner {
 		for (Car car : repository.findAll()) {
 			logger.info("brand: {}, model: {}", car.getBrand(), car.getModel());
 		}
-	}
+	}*/
 }
