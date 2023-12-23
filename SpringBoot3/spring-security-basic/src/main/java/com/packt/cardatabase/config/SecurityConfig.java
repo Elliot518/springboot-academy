@@ -1,4 +1,4 @@
-package com.packt.cardatabase;
+package com.packt.cardatabase.config;
 
 import java.util.Arrays;
 import org.springframework.context.annotation.Bean;

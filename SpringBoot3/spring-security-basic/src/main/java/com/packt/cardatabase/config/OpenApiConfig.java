@@ -1,4 +1,4 @@
-package com.packt.cardatabase;
+package com.packt.cardatabase.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
